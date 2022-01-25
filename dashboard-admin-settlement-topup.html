@@ -70,8 +70,8 @@
                             <div class="">
                                 <div class="scrollbar-container">
                                     <a class="dropdown-item mb-2 " href="dashboard-admin-transaction-qris.html">QRIS Transactions</a>
-                                    <a class="dropdown-item mb-2 " href="dashboard-admin-transaction-topup.html">TopUp Transactions</a>
-                                    <a class="dropdown-item " href="dashboard-admin-transaction-fee.html">Fee TopUp Flazz</a>
+                                     
+                                    <a class="dropdown-item " href="dashboard-admin-transaction-fee.html"> Flazz Transactions</a>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                             <div class="">
                                 <div class="scrollbar-container">
                                     <a class="dropdown-item mb-2 " href="dashboard-admin-settlement-qris.html">QRIS Settlement</a>
-                                    <a class="dropdown-item active" href="dashboard-admin-settlement-topup.html">TopUp Settlement</a>
+                                    <a class="dropdown-item active" href="dashboard-admin-settlement-topup.html">Flazz Settlement</a>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +204,7 @@
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
                                                 <div class="widget-content-left">
-                                                    <div class="widget-heading">Total Transaksi QRIS</div>
+                                                    <div class="widget-heading">Total Transaksi Flazz</div>
                                                 </div>
                                                 <div class="widget-content-right">
                                                     <div class="widget-numbers text-primary">5,456</div>
@@ -218,7 +218,7 @@
                                         <div class="widget-content-outer">
                                             <div class="widget-content-wrapper">
                                                 <div class="widget-content-left">
-                                                    <div class="widget-heading">Nilai Transaksi QRIS (Rp.)</div>
+                                                    <div class="widget-heading">Nilai Transaksi Flazz (Rp.)</div>
                                                 </div>
                                                 <div class="widget-content-right">
                                                     <div class="widget-numbers text-success">12.000.000</div>
@@ -247,9 +247,9 @@
                                 <div class="d-inline-block dropdown">
                                     <div class="card-body">
                                         <select id="example-multi-check" multiple="multiple" class="btn-warning">
-                                            <optgroup label="Location">
-                                                <option value="1-2" selected="selected">Serenade</option>
-                                                <option value="1-3" >Kulon Progo</option>
+                                            <optgroup label="Merchant">
+                                                <option value="1-2" selected="selected">PT. Kimmas</option>
+                                                <option value="1-3" >PT. Datasys</option>
                                             </optgroup>
                                         </select>
                                     </div>
@@ -269,12 +269,12 @@
                                     <thead>
                                         <tr>
                                             <th>No.</th>
-                                            <th>Transaction Topup Date</th>
+                                            <th>Transaction Date</th>
                                             <th>Merchant</th>
-                                            <th>Reference Number</th>
                                             <th>Amount</th>
-                                            <th>Topup Fee SPBU</th>
+                                            <th>MDR</th>
                                             <th>Total Transfer</th>
+                                            <th>Reference Number</th>
                                             <th>Send Mail</th>
                                         </tr>
                                     </thead>
@@ -282,11 +282,11 @@
                                         <tr>
                                             <td>1</td>
                                             <td>12/10/2022</td>
-                                            <td>SERENADE</td>
-                                            <td>1531484441</td>
+                                            <td>PT. Kimmas</td>
                                             <td>200.000</td>
-                                            <td>270.000</td>
-                                            <td>270.000</td>
+                                            <td>800</td>
+                                            <td>199.200</td>
+                                            <td>1531484441</td>
                                             <td>
                                                 <div class="col-md-3">
                                                     <button class="ladda-button mb-2 mr-2 btn btn-shadow btn-focus" data-style="zoom-in">
@@ -301,11 +301,11 @@
                                         <tr>
                                             <td>1</td>
                                             <td>12/10/2022</td>
-                                            <td>SERENADE</td>
-                                            <td>1531484441</td>
+                                            <td>PT. Kimmas</td>
                                             <td>200.000</td>
-                                            <td>270.000</td>
-                                            <td>270.000</td>
+                                            <td>800</td>
+                                            <td>199.200</td>
+                                            <td>1531484441</td>
                                             <td>
                                                 <div class="col-md-3">
                                                     <button class="ladda-button mb-2 mr-2 btn btn-shadow btn-focus" data-style="zoom-in">
@@ -320,11 +320,11 @@
                                         <tr>
                                             <td>1</td>
                                             <td>12/10/2022</td>
-                                            <td>Kulon Progo</td>
-                                            <td>1531484441</td>
+                                            <td>PT. Datasys</td>
                                             <td>200.000</td>
-                                            <td>270.000</td>
-                                            <td>270.000</td>
+                                            <td>800</td>
+                                            <td>199.200</td>
+                                            <td>1531484441</td>
                                             <td>
                                                 <div class="col-md-3">
                                                     <button class="ladda-button mb-2 mr-2 btn btn-shadow btn-focus" data-style="zoom-in">
@@ -341,11 +341,12 @@
                                         <tr>
                                             <th>No.</th>
                                             <th>Transaction Date</th>
-                                            <th>Payment Type</th>
-                                            <th>Location</th>
-                                            <th>Reference Number</th>
+                                            <th>Merchant</th>
                                             <th>Amount</th>
-                                            <th>Status</th>
+                                            <th>MDR</th>
+                                            <th>Total Transfer</th>
+                                            <th>Reference Number</th>
+                                            <th>Send Mail</th>
                                         </tr>
                                     </tfoot>
                                 </table>

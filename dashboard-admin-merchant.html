@@ -55,12 +55,8 @@
                             <div class="">
                                 <div class="scrollbar-container">
                                     <a class="dropdown-item mb-2 " href="dashboard-admin-profile.html">User</a>
+                                    <a class="dropdown-item mb-2 active" href="dashboard-admin-merchant.html">Merchant</a>
                                     <a class="dropdown-item " href="dashboard-admin-spbu.html">SPBU</a>
-                                    <div class="nav-item-header text-primary nav-item">
-                                        Merchant
-                                    </div>
-                                    <a class="dropdown-item mb-2 active" href="dashboard-admin-merchant.html">Merchant QRIS</a>
-                                    <a class="dropdown-item mb-2 " href="dashboard-admin-merchant-flazz.html">Merchant Flazz</a>
                                 </div>
                             </div>
                         </div>
@@ -240,6 +236,8 @@
                                                         <th>email</th>
                                                         <th>bank name</th>
                                                         <th>bank account</th>
+                                                        <th>MDR</th>
+                                                        <th>Fee SPBU</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -252,6 +250,8 @@
                                                         <td>zaenal@admin.com</td>
                                                         <td>BCA</td>
                                                         <td>031931948756784</td>
+                                                        <td>Rp. 750</td>
+                                                        <td>Rp. 1.000</td>
                                                     </tr>
                                                     <tr data-toggle="modal" data-target=".bd-example-modal-lg2">
                                                         <td>1</td>
@@ -262,6 +262,8 @@
                                                         <td>zaenal@admin.com</td>
                                                         <td>Mandiri</td>
                                                         <td>031931948756784</td>
+                                                        <td>Rp. 750</td>
+                                                        <td>Rp. 1.000</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -663,7 +665,6 @@
                                             <div class="card-body">
                                                 <form class="">
                                                     
-                                                    <div class="position-relative form-group"><label for="exampleEmail" class="">Merchant Type</label><input name="MerchantName" id="exampleMerchantName" readonly placeholder="QRIS" type="MerchantName" class="form-control"></div>
                                                     <div class="position-relative form-group"><label for="exampleEmail" class="">Merchant Name</label><input name="MerchantName" id="exampleMerchantName" placeholder="Nama Merchant" type="MerchantName" class="form-control"></div>
                                                     <div class="position-relative form-group"><label for="exampleEmail" class="">Merchant Address</label><input name="MerchantAddress" id="exampleMerchantAddress" placeholder="Address Merchant" type="MerchantAddress" class="form-control"></div>
                                                     <div class="position-relative form-group"><label for="exampleEmail" class="">Phone</label><input name="Phone" id="examplePhone" placeholder="Phone Merchant" type="Phone" class="form-control"></div>

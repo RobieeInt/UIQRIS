@@ -70,8 +70,8 @@
                             <div class="">
                                 <div class="scrollbar-container">
                                     <a class="dropdown-item mb-2 active" href="dashboard-admin-transaction-qris.html">QRIS Transactions</a>
-                                     
-                                    <a class="dropdown-item " href="dashboard-admin-transaction-fee.html"> Flazz Transactions</a>
+                                    <a class="dropdown-item mb-2" href="dashboard-admin-transaction-fee.html">  Topup Flazz Transactions</a>
+                                    <a class="dropdown-item " href="dashboard-admin-transaction-history.html">  History Transactions</a>
                                 </div>
                             </div>
                         </div>
@@ -79,14 +79,14 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" data-offset="10" data-display="static" aria-expanded="false" >
                             <i class="nav-icon-big typcn typcn-document-text"></i>
-                            <span>Settlement</span>
+                            <span>Rekap Pembayaran</span>
                             <i class="nav-icon-pointer icon ion-ios-arrow-down"></i>
                         </a>
                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-rounded">
                             <div class="">
                                 <div class="scrollbar-container">
-                                    <a class="dropdown-item mb-2 " href="dashboard-admin-settlement-qris.html">QRIS Settlement</a>
-                                    <a class="dropdown-item " href="dashboard-admin-settlement-topup.html">Flazz Settlement</a>
+                                    <a class="dropdown-item mb-2 " href="dashboard-admin-settlement-qris.html">Rekap Pembayaran QRIS</a>
+                                    <a class="dropdown-item " href="dashboard-admin-settlement-topup.html">Rekap Pembayaran Topup Flazz</a>
                                 </div>
                             </div>
                         </div>
@@ -244,35 +244,38 @@
                                         <span></span>
                                         <i class="fa pl-1 fa-caret-down"></i>
                                     </button>
-                                <div class="d-inline-block dropdown">
-                                    <div class="card-body ml-0">
-                                        <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="dropdown-toggle btn btn-outline-secondary">Payment Type</button>
-                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
-                                            <button type="button" tabindex="0" class="dropdown-item">Gopay</button>
-                                            <button type="button" tabindex="0" class="dropdown-item">Ovo</button>
+                                    <div class="d-inline-block dropdown">
+                                        <div class="card-body">
+                                            <select id="example-multi-check" multiple="multiple" class="btn-outline-dark">
+                                                <optgroup label="Payment Type">
+                                                    <option value="1-2" selected="selected">Gopay</option>
+                                                    <option value="1-3" >Ovo</option>
+                                                </optgroup>
+                                            </select>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="d-inline-block dropdown">
-                                    <div class="card-body ml-0">
-                                        <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="dropdown-toggle btn btn-outline-secondary">Location</button>
-                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
-                                            <button type="button" tabindex="0" class="dropdown-item">Serenade</button>
-                                            <button type="button" tabindex="0" class="dropdown-item">Kulon Progo</button>
+                                    <div class="d-inline-block dropdown">
+                                        <div class="card-body">
+                                            <select id="example-multi-check1" multiple="multiple" class="btn-outline-alternate">
+                                                <optgroup label="Location">
+                                                    <option value="1-2" selected="selected">Serenade</option>
+                                                    <option value="1-3" >Kulon Progo</option>
+                                                </optgroup>
+                                            </select>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="d-inline-block dropdown">
-                                    <div class="card-body ml-0">
-                                        <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="dropdown-toggle btn btn-outline-secondary">Status</button>
-                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
-                                            <button type="button" tabindex="0" class="dropdown-item">Success</button>
-                                            <button type="button" tabindex="0" class="dropdown-item">Pending</button>
+                                    <div class="d-inline-block dropdown">
+                                        <div class="card-body">
+                                            <select id="example-multi-check2" multiple="multiple" class="btn-outline-warning">
+                                                <optgroup label="Status">
+                                                    <option value="1-2" selected="selected">Success</option>
+                                                    <option value="1-3" >Pending</option>
+                                                </optgroup>
+                                            </select>
                                         </div>
                                     </div>
-                                </div>
                                 <div class="d-inline-block dropdown">
-                                    <button class=" btn-pill btn-hover-shine btn btn-info">
+                                    <button class=" btn-pill btn-hover-shine btn btn-outline-info">
                                         <i class="nav-link-icon typcn typcn-export"></i>      Export Data
                                     </button>
                                 </div>
@@ -291,6 +294,7 @@
                                             <th>Location</th>
                                             <th>Reference Number</th>
                                             <th>Amount</th>
+                                            <th>MDR</th>
                                             <th>Status</th>
                                         </tr>
                                     </thead>
@@ -302,15 +306,17 @@
                                             <td>SERENADE</td>
                                             <td>1531484441</td>
                                             <td>200.000</td>
+                                            <td>0.4 %</td>
                                             <td>Success</td>
                                         </tr>
                                         <tr>
                                             <td>1</td>
                                             <td>12/10/2022</td>
-                                            <td>Gopay</td>
+                                            <td>Ovo</td>
                                             <td>SERENADE</td>
                                             <td>1531484441</td>
                                             <td>200.000</td>
+                                            <td>0.4 %</td>
                                             <td>Success</td>
                                         </tr>
                                     </tbody>

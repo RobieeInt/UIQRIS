@@ -210,13 +210,17 @@
 
 
                         <div class="main-card mb-3 card mt-4">
-                            <div class="card-body">
+                        <div class="card-body">
                                    <div>
                                     <ul class="nav nav-tabs" role="tablist">
                                        
                                         <li>
                                                 <button  href="#tab-table1"  data-toggle="tab" class="mb-2 mr-2 btn btn-shadow btn-outline-focus active">
                                                      <i class="nav-link-icon typcn typcn-chevron-left-outline"></i> Profile Merchant</button>
+                                        </li>
+                                        <li>
+                                                <button  href="#tab-table2"  data-toggle="tab" class="mb-2 mr-2 btn btn-shadow btn-outline-focus ">
+                                                     Flazz Transactions <i class="nav-link-icon typcn typcn-chevron-right-outline"></i></button>
                                         </li>
                                     </ul>
                                    <div class="tab-content">
@@ -230,7 +234,8 @@
                                                         <th>address</th>
                                                         <th>phone</th>
                                                         <th>email</th>
-                                                        <th>Jumlah SPBU</th>
+                                                        <th>bank name</th>
+                                                        <th>bank account</th>
                                                         <th>MDR</th>
                                                         <th>Fee SPBU</th>
                                                     </tr>
@@ -243,7 +248,8 @@
                                                         <td>Tangerang</td>
                                                         <td>083812854491</td>
                                                         <td>zaenal@admin.com</td>
-                                                        <td>1</td>
+                                                        <td>BCA</td>
+                                                        <td>031931948756784</td>
                                                         <td>Rp. 750</td>
                                                         <td>Rp. 1.000</td>
                                                     </tr>
@@ -254,9 +260,32 @@
                                                         <td>Tangerang</td>
                                                         <td>083812854491</td>
                                                         <td>zaenal@admin.com</td>
-                                                        <td>1</td>
+                                                        <td>Mandiri</td>
+                                                        <td>031931948756784</td>
                                                         <td>Rp. 750</td>
                                                         <td>Rp. 1.000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane" id="tab-table2">
+                                            <table id="myTable2" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>No.</th>
+                                                        <th> Merchant name</th>
+                                                        <th>Topup Fee Bank</th>
+                                                        <th>Topup Fee SPBU</th>
+                                                        <th>Topup Fee IsiBensin</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr data-toggle="modal" data-target=".bd-example-modal-lg2">
+                                                        <td>1</td>
+                                                        <td>PT. Datasys</td>
+                                                        <td>Rp. 25.000</td>
+                                                        <td>Rp. 15.000</td>
+                                                        <td>Rp. 15.000</td>
                                                     </tr>
                                                 </tbody>
                                             </table>

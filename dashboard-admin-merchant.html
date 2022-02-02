@@ -218,6 +218,10 @@
                                                 <button  href="#tab-table1"  data-toggle="tab" class="mb-2 mr-2 btn btn-shadow btn-outline-focus active">
                                                      <i class="nav-link-icon typcn typcn-chevron-left-outline"></i> Profile Merchant</button>
                                         </li>
+                                        <li>
+                                                <button  href="#tab-table2"  data-toggle="tab" class="mb-2 mr-2 btn btn-shadow btn-outline-focus ">
+                                                        List SPBU <i class="nav-link-icon typcn typcn-chevron-right-outline"></i></button>
+                                        </li>
                                     </ul>
                                    <div class="tab-content">
                                         <div class="tab-pane active" id="tab-table1">
@@ -257,6 +261,30 @@
                                                         <td>1</td>
                                                         <td>Rp. 750</td>
                                                         <td>Rp. 1.000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane" id="tab-table2">
+                                            <table id="myTable2" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>No.</th>
+                                                        <th>SPBU Code</th>
+                                                        <th>Nama SPBU</th>
+                                                        <th>Email</th>
+                                                        <th>Telpon</th>
+                                                        <th>PIC</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr data-toggle="modal" data-target=".bd-example-modal-lg2">
+                                                        <td>1</td>
+                                                        <td>34-77889</td>
+                                                        <td>SERENADE</td>
+                                                        <td>serenade@gmail.com</td>
+                                                        <td>08568780192</td>
+                                                        <td>aenal</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -699,16 +727,16 @@
                                                      <div class="tab-pane active" id="form-edit">
                                                         <form class="">
                                                     
-                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Merchant Name</label><input name="MerchantName" id="exampleMerchantName" placeholder="Nama Merchant" type="MerchantName" class="form-control"></div>
-                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Merchant Address</label><input name="MerchantAddress" id="exampleMerchantAddress" placeholder="Address Merchant" type="MerchantAddress" class="form-control"></div>
-                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Phone</label><input name="Phone" id="examplePhone" placeholder="Phone Merchant" type="Phone" class="form-control"></div>
+                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Merchant Name</label><input name="MerchantName" value="PT. Citra Glow UV" id="exampleMerchantName" placeholder="Nama Merchant" type="MerchantName" class="form-control"></div>
+                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Merchant Address</label><input name="MerchantAddress" value="Tangerang" id="exampleMerchantAddress" placeholder="Address Merchant" type="MerchantAddress" class="form-control"></div>
+                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Phone</label><input name="Phone" id="examplePhone" value="083812854491" placeholder="Phone Merchant" type="Phone" class="form-control"></div>
                                                             <div class="position-relative form-group"><label for="exampleEmail" class="">Email</label><input name="email" id="exampleEmail" placeholder="Email Merchant" type="email" class="form-control"></div>
-                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Bank Name</label><input name="BankName" id="exampleBankName" placeholder="Bank Name" type="BankName" class="form-control"></div>
-                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Bank Account</label><input name="BankAccount" id="exampleBankAccount" placeholder="Bank Account" type="BankAccount" class="form-control"></div>
-                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">MDR</label><input name="MDR" id="exampleMDR" placeholder="MDR" type="MDR" class="form-control"></div>
-                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Fee Bank</label><input name="Feebank" id="exampleFeebank" placeholder="Fee Bank" type="Feebank" class="form-control"></div>
-                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Fee SPBU</label><input name="FeeSPBU" id="exampleFeeSPBU" placeholder="Fee SPBU" type="FeeSPBU" class="form-control"></div>
-                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Fee Isibensin</label><input name="FEEIB" id="exampleFEEIB" placeholder="Fee Isibensin" type="FEEIB" class="form-control"></div>
+                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Bank Name</label><input name="BankName" id="exampleBankName" value="BCA" placeholder="Bank Name" type="BankName" class="form-control"></div>
+                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Bank Account</label><input name="BankAccount" id="exampleBankAccount" value="1531484441" placeholder="Bank Account" type="BankAccount" class="form-control"></div>
+                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">MDR</label><input name="MDR" id="exampleMDR" placeholder="MDR" value="0.4" type="MDR" class="form-control"></div>
+                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Fee Bank</label><input name="Feebank" id="exampleFeebank" value="500" placeholder="Fee Bank" type="Feebank" class="form-control"></div>
+                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Fee SPBU</label><input name="FeeSPBU" id="exampleFeeSPBU" value="1000" placeholder="Fee SPBU" type="FeeSPBU" class="form-control"></div>
+                                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Fee Isibensin</label><input name="FEEIB" id="exampleFEEIB" value="500" placeholder="Fee Isibensin" type="FEEIB" class="form-control"></div>
                                                             <div class="row ml-auto">
                                                                 <div class="position-relative form-check mr-3">
                                                                     <input name="check" id="QRIS" type="checkbox" class="form-check-input"><label for="QRIS" class="form-check-label">QRIS</label>
@@ -744,6 +772,7 @@
                                                              </tbody>
                                                          </table>
                                                      </div>
+                                    
                                              </div>
                                          </div>
                                      </div>

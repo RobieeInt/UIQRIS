@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Profile User - Admin.</title>
+    <title>Edit Profile User - Admin.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
     <link rel="icon" href="#">
@@ -53,8 +53,8 @@
                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-rounded">
                             <div class="">
                                 <div class="scrollbar-container">
-                                    <a class="dropdown-item mb-2 active" href="dashboard-admin-profile.html">User</a>
-                                     <a class="dropdown-item mb-2 " href="dashboard-admin-merchant.html">Merchant & SPBU</a> 
+                                    <a class="dropdown-item mb-2 " href="dashboard-admin-profile.html">User</a>
+                                     <a class="dropdown-item mb-2 active" href="dashboard-admin-merchant.html">Merchant & SPBU</a> 
                                 </div>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
                                             <span class="d-inline-block pr-2">
                                             <i class=""></i>
                                         </span>
-                                            <span class="d-inline-block">Profile User</span>
+                                            <span class="d-inline-block">Edit Profile User</span>
                                         </div>
                                         <div class="page-title-subheading opacity-10">
                                             <nav class="" aria-label="breadcrumb">
@@ -169,7 +169,7 @@
                                                         </a>
                                                     </li>
                                                     <li class="breadcrumb-item">
-                                                        <a href="javascript:void(0);">Profile</a>
+                                                        <a href="javascript:void(0);"> Edit Profile</a>
                                                     </li>
                                                     <li class="active breadcrumb-item" aria-current="page">
                                                         User
@@ -179,77 +179,102 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="page-title-actions">
-                                    <div class="d-inline-block pr-3">
-                                        <select id="custom-inp-top" type="select" class="custom-select">
-                                            <option>Select period...</option>
-                                            <option>Last Week</option>
-                                            <option>Last Month</option>
-                                            <option>Last Year</option>
-                                        </select>
-                                    </div>
-                                    <button type="button" data-toggle="tooltip" data-placement="left" class="btn btn-dark" title="Show a Toastr Notification!">
-                                        <i class="fa fa-battery-three-quarters"></i>
-                                    </button>
-                                </div> -->
+                                
                             </div>
                         </div>
                     </div>
                     <!-- Data Tables -->
-                    <div class="container kero-container">
-
-                        <button class="mt-5 mr-2 btn-pill btn-hover-shine btn btn-success" onclick="window.location.href='adduser-profile.html'">
-                                <i class="nav-link-icon typcn typcn-user-add-outline"></i> Tambah User
-                            </button>
-
-                        <button class="mt-5 btn-pill btn-hover-shine btn btn-info">
-                                <i class="nav-link-icon typcn typcn-export"></i>      Export Data
-                            </button>
-
-
-                        <div class="main-card mb-3 card mt-4">
-                            <div class="card-body">
-                                <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
-                                    <thead>
-                                        <tr data-toggle="modal" data-target=".bd-example-modal-lg2">
-                                            <th>User ID</th>
-                                            <th>Name</th>
-                                            <th>Company</th>
-                                            <th>Address</th>
-                                            <th>Phone</th>
-                                            <th>Email</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr onclick="window.location.href='edituser.html'">
-                                            <td>1</td>
-                                            <td>Zaenal</td>
-                                            <td>PT. Citra Glow UV</td>
-                                            <td>Tangerang</td>
-                                            <td>083812854491</td>
-                                            <td>zaenal@admin.com</td>
-                                        </tr>
-                                        <tr onclick="window.location.href='edituser.html'">
-                                            <td>2</td>
-                                            <td>Zaenal Ucup</td>
-                                            <td>PT. Citra Glow UV</td>
-                                            <td>Tangerang</td>
-                                            <td>083812854491</td>
-                                            <td>zaenal@admin.com</td>
-                                        </tr>
-                                        <tr onclick="window.location.href='edituser.html'">
-                                            <td>1</td>
-                                            <td>Zaenal</td>
-                                            <td>PT. Citra Glow UV</td>
-                                            <td>Tangerang</td>
-                                            <td>083812854491</td>
-                                            <td>zaenal@admin.com</td>
-                                        </tr>
-                                        
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                    <div class="container kero-container mt-2">
+                        <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-body"><h5 class="card-title">Edit Profile</h5>
+                                                <form class="">
+                                                    <div class="position-relative form-group"><label for="exampleName" class="">Name</label><input name="Name" id="exampleName" placeholder="Input Your Name" type="Name" class="form-control"></div>
+                                                    <div class="position-relative form-group"><label for="exampleEmail" class="">Email</label><input Email="Email" id="exampleEmail" placeholder="Input Your Email" type="Email" class="form-control"></div>
+                                                    <div class="position-relative form-group"><label for="examplePassword" class="">Password</label><input name="password" id="examplePassword" placeholder="password" type="password" class="form-control"></div>
+                                                    <div class="position-relative form-group"><label for="exampleEmail" class="">Phone</label><input Phone="Phone" id="examplePhone" placeholder="Input Your Phone" type="Phone" class="form-control"></div>
+                                                    <div class="position-relative form-group"><label for="exampleEmail" class="">Address</label><input Phone="Phone" id="examplePhone" placeholder="Address" type="Phone" class="form-control"></div>
+                                                    <div class="position-relative form-group"><label for="exampleSelect" class="">Company/Merchant</label><select name="select" id="exampleSelect" class="form-control">
+                                                        <option>PT. Datasys</option>
+                                                        <option>PT. Kimmas</option>
+                                                        <option>PT. Hexa</option>
+                                                    </select>
+                                                    </div>
+                                                    <div class="position-relative form-group"><label for="exampleSelect" class="">Role</label><select name="select" id="exampleSelect" class="form-control">
+                                                        <option>Admin</option>
+                                                        <option>Merchant</option>
+                                                        <option>SPBU</option>
+                                                    </select>
+                                                    </div>
+                                                    <button class="mt-1 btn btn-success">Save</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="accordion" class="accordion-wrapper mb-3">
+                                                    <div class="card">
+                                                        <div id="headingOne" class="card-header">
+                                                            <button type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne" class="text-left m-0 p-0 btn btn-link btn-block">
+                                                                <h5 class="m-0 p-0">Keterangan Role Admin</h5>
+                                                            </button>
+                                                        </div>
+                                                        <div data-parent="#accordion" id="collapseOne1" aria-labelledby="headingOne" class="collapse show">
+                                                            <div class="card-body">1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                                                truck
+                                                                quinoa
+                                                                nesciunt
+                                                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                                                anderson
+                                                                cred nesciunt
+                                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                                                sustainable
+                                                                VHS.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div id="headingTwo" class="b-radius-0 card-header">
+                                                            <button type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false" aria-controls="collapseTwo" class="text-left m-0 p-0 btn btn-link btn-block"><h5 class="m-0 p-0">
+                                                                Keterangan Role Merchant</h5></button>
+                                                        </div>
+                                                        <div data-parent="#accordion" id="collapseOne2" class="collapse">
+                                                            <div class="card-body">2. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                                                truck
+                                                                quinoa
+                                                                nesciunt
+                                                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                                                anderson
+                                                                cred nesciunt
+                                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                                                sustainable
+                                                                VHS.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div id="headingThree" class="card-header">
+                                                            <button type="button" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false" aria-controls="collapseThree" class="text-left m-0 p-0 btn btn-link btn-block"><h5 class="m-0 p-0">
+                                                               Keterangan Role SPBU</h5></button>
+                                                        </div>
+                                                        <div data-parent="#accordion" id="collapseOne3" class="collapse">
+                                                            <div class="card-body">3. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                                                truck
+                                                                quinoa
+                                                                nesciunt
+                                                                laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                                                anderson
+                                                                cred nesciunt
+                                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                                                sustainable
+                                                                VHS.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
                     </div>
                     <!-- Akhir Datatables -->
                 </div>
@@ -598,40 +623,3 @@
 </body>
 
 </html>
-
-<!-- modal edit profile -->
-<div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Edit Merchant</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="main-card mb-6 card">
-                                            <div class="card-body">
-                                                <form class="">
-                                                    
-                                                    
-                                                    <div class="position-relative form-group"><label for="exampleEmail" class=""> Name</label><input name="BankAccount" id="exampleBankAccount" placeholder="Name" readonly type="BankAccount" class="form-control"></div>
-                                                    <div class="position-relative form-group"><label for="exampleEmail" class="">Email</label><input name="MDR" id="exampleMDR" placeholder="Email" type="MDR" class="form-control"></div>
-                                                    <div class="position-relative form-group"><label for="exampleEmail" class="">Password</label><input name="Feebank" id="exampleFeebank" placeholder="Password" type="Feebank" class="form-control"></div>
-                                                    <div class="position-relative form-group"><label for="exampleEmail" class="">Phone</label><input name="FeeSPBU" id="exampleFeeSPBU" placeholder="Phone" type="FeeSPBU" class="form-control"></div>
-                                                    <div class="position-relative form-group"><label for="exampleEmail" class="">Address</label><input name="FEEIB" id="exampleFEEIB" placeholder="Address" type="FEEIB" class="form-control"></div>
-                                                    <button class="mt-1 btn btn-success">Save</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>

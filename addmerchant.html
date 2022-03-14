@@ -186,71 +186,104 @@
                     <!-- Data Tables -->
                     <div class="container kero-container mt-2">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="main-card mb-3 card">
-                                    <div class="card-body"><h5 class="card-title">Tambah Merchant</h5>
-                                        <form class="">
-                                            <div class="form-row ">
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="examplemerchant11" class="">Nama Merchant</label><input name="merchant"  
-                                                                                                                                                             class="form-control"></div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="exampleid11" class="">Nama Kontak Merchant</label><input name="id"   type="id" class="form-control">
-                                                    </div>
+                                        <form id="signupForm" class="col-md-10 mx-auto" method="post" action="">
+                                            <div class="card-body"><h5 class="card-title"> <strong> Profil Merchant </strong></h5>
+                                                <div class="divider"></div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " > <h5>Nama Merchant</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" >:</label>
+                                                <div class="col-md-7">
+                                                    <input id="merchatname" name="merchatname"   class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="form-row ">
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="examplekontak11" class="">Nomor Telpon</label><input name="kontak" type="kontak" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="exampleemail11" class="">Email </label><input name="email"  type="email"
-                                                                                                                                                             class="form-control"></div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " > <h5>Kontak Merchant</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" >:</label>
+                                                <div class="col-md-7">
+                                                    <input id="firstname" name="firstname"  class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="position-relative form-group"><label for="examplalamat2" class="">Alamat</label><input name="alamat2"  type="text"
-                                                                                                                                                    class="form-control">
-                                            </div>
-                                            
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="main-card mb-3 card">
-                                    <div class="card-body"><h5 class="card-title">Informasi Rekening</h5>
-                                        <form class="">
-                                            <div class="form-row ">
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="examplebca11" class="">Nama Bank</label><input name="bca"  type="bca" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="examplerekening11" class="">No Rekening</label><input name="rekening" type="rekening"
-                                                                                                                                                             class="form-control"></div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " > <h5>Email</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" >:</label>
+                                                <div class="col-md-7">
+                                                    <input  id="email" name="email" value="zaenal@admin.com" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="form-row ">
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " > <h5>No Telepon</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" >:</label>
+                                                <div class="col-md-7">
+                                                    <input id="no_tlp" name="no_tlp"  placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " > <h5>Alamat</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" >:</label>
+                                                <div class="col-md-7">
+                                                    <textarea name="text" id="exampleText" class="form-control">Jl. Gading Serpong</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="card-body mt-3"><h5 class="card-title"> <strong> Informasi Rekening </strong></h5>
+                                                <div class="divider"></div>
                                                 <div class="form-row">
-                                                    <div class="col-md-3">
-                                                        <div class="position-relative form-group"><label for="example" class="">MDR</label><input name=""  type="text" class="form-control"></div>
+                                                    <label class="col-md-4 mt-2 " > <h5>Nama Bank</h5> </label>
+                                                    <label class="col-md-1 mt-2 text-muted" >:</label>
+                                                    <div class="col-md-7">
+                                                        <div class="position-relative form-group mt-2">
+                                                        <select name="select" id="exampleSelect" class="form-control">
+                                                            <option>BCA - 014</option>
+                                                            <option>BNI - 009</option>
+                                                            <option>MANDIRI - 008</option>
+                                                            <option>BRI - 002</option>
+                                                        </select>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-md-3">
-                                                        <div class="position-relative form-group"><label for="example" class="">Fee Bank</label><input name="" type="text" class="form-control"></div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <div class="position-relative form-group"><label for="example" class="">Fee SPBU</label><input name=""  type="text" class="form-control"></div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <div class="position-relative form-group"><label for="example" class="">Fee Isibensin</label><input name="" type="text" class="form-control"></div>
-                                                    </div>
-
-                                                    <button class="mt-5 ml-2 btn btn-danger">Kembali</button>
-                                                    <button class="mt-5 ml-3 btn btn-success">Simpan</button>
+                                                </div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " > <h5>No Rekening</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" >:</label>
+                                                <div class="col-md-7">
+                                                    <input  id="rekening" name="rekening"  class="form-control">
                                                 </div>
                                             </div>
+
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " > <h5>MDR</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" >:</label>
+                                                <div class="col-md-7">
+                                                    <input  id="mdr" name="mdr" value="0.4" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " > <h5>Fee Bank</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" >:</label>
+                                                <div class="col-md-7">
+                                                    <input id="feebank" name="feebank" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " > <h5>Fee SPBU</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" >:</label>
+                                                <div class="col-md-7">
+                                                    <input id="feespbu" name="feespbu" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " > <h5>Fee Hexa</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" >:</label>
+                                                <div class="col-md-7">
+                                                    <input id="feehexa" name="feehexa" class="form-control">
+                                                </div>
+                                            </div>
+                                           
+                                            <button class="mt-5 ml-2 btn btn-danger">Kembali</button>
+                                            <button class="mt-5 ml-3 btn btn-success">Simpan</button>
                                         </form>
                                     </div>
                                 </div>

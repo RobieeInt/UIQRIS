@@ -238,7 +238,7 @@
                         <div class="main-card mb-3 card">
                             <div class="card-body">
                                 <h5 class="card-title mb-1">Filter: </h5>
-                                <button class="btn btn-primary" id="reportrange">
+                                    <button class="btn btn-primary" id="reportrange">
                                         <i class="fa fa-calendar pr-1"></i>
                                         <span></span>
                                         <i class="fa pl-1 fa-caret-down"></i>
@@ -271,7 +271,7 @@
                                             <th>MDR</th>
                                             <th>Total Transfer</th>
                                             <th>Reference Number</th>
-                                            <th>Send Mail</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -283,14 +283,10 @@
                                             <td>800</td>
                                             <td>199.200</td>
                                             <td>1531484441</td>
-                                            <td>
-                                                <div class="col-md-3">
-                                                    <button class="ladda-button mb-2 mr-2 btn btn-shadow btn-focus" data-style="zoom-in">
-                                                    <span class="ladda-label">Send
-                                                        </span>
-                                                    <span class="ladda-spinner">
-                                                    </span>
-                                                </button>
+                                            <td style="white-space: nowrap;">
+                                                <div class="col-md-3 d-inline-block">
+                                                    <button class="btn btn-outline-danger"  data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Ubah</button> 
+                                                    <button class="btn btn-success" data-toggle="modal" data-target="#modaledit"><i class="fa fa-share"></i> Kirim</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -302,14 +298,9 @@
                                             <td>800</td>
                                             <td>199.200</td>
                                             <td>1531484441</td>
-                                            <td>
-                                                <div class="col-md-3">
-                                                    <button class="ladda-button mb-2 mr-2 btn btn-shadow btn-focus" data-style="zoom-in">
-                                                    <span class="ladda-label">Send
-                                                        </span>
-                                                    <span class="ladda-spinner">
-                                                    </span>
-                                                </button>
+                                            <td style="white-space: nowrap;">
+                                                <div class="col-md-3 d-inline-block">
+                                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#modalhapus"><i class="fa fa-trash"></i> Ubah</button> <button class="btn btn-success" data-toggle="modal" data-target="#modaledit"><i class="fa fa-share"></i> Kirim</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -321,30 +312,13 @@
                                             <td>800</td>
                                             <td>199.200</td>
                                             <td>1531484441</td>
-                                            <td>
-                                                <div class="col-md-3">
-                                                    <button class="ladda-button mb-2 mr-2 btn btn-shadow btn-focus" data-style="zoom-in">
-                                                    <span class="ladda-label">Send
-                                                        </span>
-                                                    <span class="ladda-spinner">
-                                                    </span>
-                                                </button>
+                                            <td style="white-space: nowrap;">
+                                                <div class="col-md-3 d-inline-block">
+                                                    <button class="btn btn-outline-danger" data-toggle="modal" data-target="#modalhapus"><i class="fa fa-trash"></i> Ubah</button> <button class="btn btn-success" data-toggle="modal" data-target="#modaledit"><i class="fa fa-share"></i> Kirim</button>
                                                 </div>
                                             </td>
                                         </tr>
                                     </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th>No.</th>
-                                            <th>Transaction Date</th>
-                                            <th>Merchant</th>
-                                            <th>Amount</th>
-                                            <th>MDR</th>
-                                            <th>Total Transfer</th>
-                                            <th>Reference Number</th>
-                                            <th>Send Mail</th>
-                                        </tr>
-                                    </tfoot>
                                 </table>
                             </div>
                         </div>
@@ -696,3 +670,71 @@
 </body>
 
 </html>
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"  style="z-index: 9999 !important;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ubah Data</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card-body">
+                    <form id="signupForm" class="col-md-12 mx-auto" method="post" action=""> 
+                        <div class="form-group">
+                            <label for="firstname">Merchant</label>
+                            <div>
+                                <input type="text" class="form-control" id="merchant" name="merchant" value="PT KIMMAS" readonly placeholder="Nama"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">MDR</label>
+                            <div>
+                                <input type="text" class="form-control" id="mdr" name="mdr" value="744.862" readonly placeholder="Email"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="divisi">No Rekening</label>
+                            <div>
+                                <input type="text" class="form-control" id="norekening" name="norekening" value="887778564" readonly placeholder="Divisi"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="jabatan" style="z-index: 1151 !important;">Tanggal Transfer</label>
+                            <div>
+                                <div class="input-group mb-3">
+                                    <input type="text"  style="z-index: 1151 !important;" class="form-control" data-toggle="datepicker-button"/>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-primary datepicker-trigger-btn" type="button" >Buka Datepicker</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="no_tlp">Nomor Referensi</label>
+                            <div>
+                                <input type="text" class="form-control" id="noreferensi" name="noreferensi" placeholder="Nomor Referensi"/>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success" name="signup" value="Sign up">Simpan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

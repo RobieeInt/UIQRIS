@@ -295,9 +295,9 @@
                                                                                 </div>
                                                                             </div>
                                                                            
-                                                                            <button class="mt-5 ml-2 btn btn-danger">Kembali</button>
-                                                                            <button class="mt-5 ml-3 btn btn-success">Simpan</button>
                                                                         </form>
+                                                                        <button class="mt-5 ml-2 btn btn-danger">Kembali</button>
+                                                                        <button class="mt-5 ml-3 btn btn-success" data-toggle="modal" data-target="#exampleModal">Simpan</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -327,6 +327,35 @@
                                                                                 </div>
                                                                             </div>
                                                                         </form>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="main-card mb-3 card">
+                                                                    <div class="card-body"><h5 class="card-title">Informasi User</h5>
+                                                                        <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>No.</th>
+                                                                                    <th>Kontak Merchant</th>
+                                                                                    <th>No Telpon</th>
+                                                                                    <th>Email</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td>Robby H</td>
+                                                                                    <td>0838188777</td>
+                                                                                    <td>robby@gmail.com</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td>Danuroni</td>
+                                                                                    <td>08568780192</td>
+                                                                                    <td>sales@datasys.co.id</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -753,3 +782,25 @@
 </body>
 
 </html>
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Informasi</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-0 text-success">Data Telah Berhasil Diubah</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Ke Halaman Merchant & SPBU</button>
+            </div>
+        </div>
+    </div>
+</div>

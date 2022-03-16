@@ -186,70 +186,75 @@
                     <!-- Data Tables -->
                     <div class="container kero-container">
                         <div class="main-card mb-3 card mt-4">
-                            <div class="card-body">
-                                <form id="signupForm" class="col-md-10 mx-auto" method="post" action=""> 
-                                    <h5 class="card-title"><strong> Tambah Profil User</strong></h5>
-                                    <div class="divider"></div>
-                                    <div class="form-group">
-                                        <label for="firstname">Nama</label>
-                                        <div>
-                                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Nama"/>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="main-card mb-6 card">
+                                        <div class="card-body"><h5 class="card-title">Add User Profile</h5>
+                                            <form id="signupForm" class="col-md-10 mx-auto" method="post" action=""> 
+                                                
+                                                <div class="form-row">
+                                                    <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Nama</h5> </label>
+                                                    <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                    <div class="col-md-7">
+                                                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Nama Kontak"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Divisi</h5> </label>
+                                                    <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                    <div class="col-md-7">
+                                                        <input type="text" class="form-control" id="divisi" name="divisi" placeholder="Divisi"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Jabatan</h5> </label>
+                                                    <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                    <div class="col-md-7">
+                                                        <input type="text" class="form-control" id="jabatan" name="jabatan" placeholder="Jabatan"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Email</h5> </label>
+                                                    <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                    <div class="col-md-7">
+                                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>No. Telpon</h5> </label>
+                                                    <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                    <div class="col-md-7">
+                                                        <input type="text" class="form-control" id="no_tlp" name="no_tlp" placeholder="Nomor Telepon"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Password</h5> </label>
+                                                    <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                    <div class="col-md-7">
+                                                        <input type="password" class="form-control" id="password" name="password" placeholder="Password"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Konfirmasi Password</h5> </label>
+                                                    <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                    <div class="col-md-7">
+                                                        <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Konfirmasi password"/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Alamat</h5> </label>
+                                                    <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                    <div class="col-md-7">
+                                                        <textarea name="text" id="exampleText" class="form-control">Jl. Gading Serpong</textarea>
+                                                    </div>
+                                                </div>
+                                               
+                                                <button class="mt-5 ml-2 btn btn-danger">Kembali</button>
+                                                <button type="submit" class="mt-5 ml-2 btn btn-success" name="signup" value="Sign up">Simpan</button>
+                                            </form>
                                         </div>
                                     </div>
-
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <div>
-                                            <input type="text" class="form-control" id="email" name="email" placeholder="Email"/>
-                                        </div>
-                                    </div>
-    
-                                    <div class="form-group">
-                                        <label for="divisi">Divisi</label>
-                                        <div>
-                                            <input type="text" class="form-control" id="divisi" name="divisi" placeholder="Divisi"/>
-                                        </div>
-                                    </div>
-    
-                                    <div class="form-group">
-                                        <label for="jabatan">Jabatan</label>
-                                        <div>
-                                            <input type="text" class="form-control" id="jabatan" name="jabatan" placeholder="Jabatan"/>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="no_tlp">No Telpon</label>
-                                        <div>
-                                            <input type="text" class="form-control" id="no_tlp" name="no_tlp" placeholder="Nomor Telepon"/>
-                                        </div>
-                                    </div>
-    
-                                    
-    
-                                    <div class="form-group">
-                                        <label for="password">Password</label>
-                                        <input type="password" class="form-control" id="password" name="password" placeholder="Password"/>
-                                    </div>
-    
-                                    <div class="form-group">
-                                        <label for="confirm_password">Konfirmasi password</label>
-                                        <div>
-                                            <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Konfirmasi password"/>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="confirm_password">Alamat</label>
-                                        <div>
-                                            <textarea name="text" id="exampleText" class="form-control">Jl. Gading Serpong</textarea>
-                                        </div>
-                                    </div>
-    
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-success" name="signup" value="Sign up">Simpan</button>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>

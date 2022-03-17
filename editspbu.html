@@ -234,10 +234,17 @@
                                                 </div>
                                             </div>
                                             <div class="form-row">
-                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Alamat</h5> </label>
+                                                <label class="col-md-4 mt-2 mb-2" for="exampleCustomCheckbox"> <h5>Alamat</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted mb-2" for="exampleCustomCheckbox">:</label>
+                                                <div class="col-md-7">
+                                                    <textarea name="text" id="exampleText" class="form-control mb-2">Jl. Gading Serpong</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Batas Transaksi Flazz</h5> </label>
                                                 <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
                                                 <div class="col-md-7">
-                                                    <textarea name="text" id="exampleText" class="form-control">Jl. Gading Serpong</textarea>
+                                                    <input name="merchant" value="5.000.000" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="form-row">
@@ -245,8 +252,8 @@
                                                 <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
                                                 <div class="col-md-7">
                                                     <div class="position-relative form-check mt-2">
-                                                        <label class="form-check-label mr-5"><input type="checkbox" class="form-check-input"> QRIS</label>
-                                                        <label class="form-check-label"><input type="checkbox" class="form-check-input"> Flazz</label>
+                                                        <label class="form-check-label mr-5"><input type="checkbox" c class="form-check-input"> QRIS</label>
+                                                        <label class="form-check-label"><input type="checkbox" checked class="form-check-input"> Flazz</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -258,16 +265,22 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
+
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body"><h5 class="card-title">Informasi Saldo</h5>
+                                        <div class="form-row">
+                                            <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Sisa Saldo Flazz</h5> </label>
+                                            <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                            <div class="col-md-7">
+                                                <input name="merchant" value="Rp. 1.750.000" readonly class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">Informasi </h5>
                                         <form class="">
-                                            <div class="form-row">
-                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Saldo Flazz</h5> </label>
-                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                <div class="col-md-7">
-                                                    <input name="merchant" value="Rp. 1.750.000" readonly class="form-control">
-                                                </div>
-                                            </div>
                                             <div class="form-row">
                                                 <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>MDR</h5> </label>
                                                 <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
@@ -282,35 +295,11 @@
                                                     <input name="merchant" value="Rp. 2.587.882" readonly class="form-control">
                                                 </div>
                                             </div>
-                                            
-                                            
-                                            
                                         </form>
                                     </div>
                                 </div>
 
-                                <div class="main-card mb-3 card">
-                                    <div class="card-body"><h5 class="card-title">Informasi User SPBU</h5>
-                                        <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th>No.</th>
-                                                    <th>Kontak SPBU</th>
-                                                    <th>No Telpon</th>
-                                                    <th>Email</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Robby H</td>
-                                                    <td>0838188777</td>
-                                                    <td>robby@gmail.com</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

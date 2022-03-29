@@ -13061,6 +13061,7 @@ a.text-secondary:focus {
     color: #3ac47d !important
 }
 
+
 a.text-success:hover,
 a.text-success:focus {
     color: #298957 !important
@@ -13138,7 +13139,11 @@ a.text-alternate:focus {
 }
 
 .text-black-50 {
-    color: rgba(0, 0, 0, 0.5) !important
+    color: #000 !important
+}
+
+.text-black-banget {
+    color: #000;
 }
 
 .text-white-50 {

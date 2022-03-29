@@ -287,6 +287,7 @@
                                             <th>Reference Number</th>
                                             <th>Jumlah</th>
                                             <th>Status</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -299,6 +300,7 @@
                                             <td>1531484441</td>
                                             <td>200.000</td>
                                             <td>Success</td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>1</td>
@@ -306,9 +308,26 @@
                                             <td>PT. Citra Glow UV</td>
                                             <td>SERENADE</td>
                                             <td>Ovo</td>
-                                            <td>1531484441</td>
-                                            <td>200.000</td>
+                                            <td>1531484442</td>
+                                            <td>100.000</td>
                                             <td>Success</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>12/10/2022</td>
+                                            <td>PT. Citra Glow UV</td>
+                                            <td>SERENADE</td>
+                                            <td>Ovo</td>
+                                            <td>1531484443</td>
+                                            <td></td>
+                                            <td>Pending</td>
+                                            <td style="white-space: nowrap;">
+                                                <div class="col-md-3 d-inline-block">
+                                                    <button class="btn btn-outline-info"  data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-pendrive"></i> Ubah</button> 
+                                                    
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
@@ -663,3 +682,59 @@
 </body>
 
 </html>
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"  style="z-index: 9999 !important;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ubah Data</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card-body">
+                    <form id="signupForm" class="col-md-12 mx-auto" method="post" action=""> 
+                        <div class="form-group">
+                            <label for="firstname">Reference Number</label>
+                            <div>
+                                <input type="text" class="form-control" id="reference" name="reference" value="1531484443" readonly placeholder="reference"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Approval Code</label>
+                            <div>
+                                <input type="text" class="form-control" id="approvalcode" name="approvalcode" value=""  placeholder="Approval Code"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Customer Pan / Card Number</label>
+                            <div>
+                                <input type="text" class="form-control" id="CustomerPan" name="CustomerPan" value=""  placeholder="Customer Pan / Card Number"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Payment Type</label>
+                            <div>
+                                <input type="text" class="form-control" id="Paymenttype" name="Paymenttype" value=""  placeholder="Payment type"/>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success" name="signup" value="Sign up">Simpan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -111,20 +111,14 @@
                                     <ul class="tabs-animated-shadow tabs-animated nav nav-justified tabs-shadow-bordered p-3">
 
                                         <li class="nav-item">
-                                            <a role="tab" class="nav-link" data-toggle="tab" href="#tab-events-header">
-                                                <span>Edit Profil</span>
+                                            <a role="tab" class="nav-link" href="editpassword.html">
+                                                <span>Ganti Password</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a role="tab" class="nav-link" data-toggle="tab" href="#tab-errors-header">
-                                                <span>System</span>
+                                            <a role="tab" class="nav-link" href="login.html">
+                                                <span>Logout</span>
                                             </a>
-                                        </li>
-                                    </ul>
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item-divider nav-item"></li>
-                                        <li class="nav-item-btn text-center nav-item">
-                                            <button class="btn-shadow btn-wide btn-pill btn btn-focus btn-sm">View Latest Changes</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -226,28 +220,28 @@
                                                                                 <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Kontak Merchant</h5> </label>
                                                                                 <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
                                                                                 <div class="col-md-7">
-                                                                                    <input name="merchant" placeholder="Zaenal" class="form-control">
+                                                                                    <input name="merchant" placeholder="Zaenal" readonly class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-row">
                                                                                 <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>No. Telpon</h5> </label>
                                                                                 <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
                                                                                 <div class="col-md-7">
-                                                                                    <input name="merchant" value="08568780192" class="form-control">
+                                                                                    <input name="merchant" value="08568780192" readonly class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-row">
                                                                                 <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Email</h5> </label>
                                                                                 <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
                                                                                 <div class="col-md-7">
-                                                                                    <input name="merchant" value="zaenal@admin.com" class="form-control">
+                                                                                    <input name="merchant" value="zaenal@admin.com" readonly class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-row">
                                                                                 <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Alamat</h5> </label>
                                                                                 <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
                                                                                 <div class="col-md-7 mb-2">
-                                                                                    <textarea name="text" id="exampleText" class="form-control">Jl. Gading Serpong</textarea>
+                                                                                    <textarea name="text" id="exampleText" readonly class="form-control">Jl. Gading Serpong</textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-row">
@@ -267,7 +261,7 @@
                                                                                     <input name="merchant" value="0.4" class="form-control">
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="form-row">
+                                                                            <!-- <div class="form-row">
                                                                                 <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Fee Bank</h5> </label>
                                                                                 <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
                                                                                 <div class="col-md-7">
@@ -287,21 +281,21 @@
                                                                                 <div class="col-md-7">
                                                                                     <input name="merchant" value="500" class="form-control">
                                                                                 </div>
-                                                                            </div>
+                                                                            </div> -->
 
                                                                             <h5 class="card-title mt-5">Informasi Rekening</h5>
                                                                             <div class="form-row">
                                                                                 <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Nama Bank</h5> </label>
                                                                                 <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
                                                                                 <div class="col-md-7">
-                                                                                    <input name="merchant" value="BCA"  class="form-control">
+                                                                                    <input name="merchant" value="BCA" readonly  class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-row">
                                                                                 <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Nomor Rekening</h5> </label>
                                                                                 <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
                                                                                 <div class="col-md-7">
-                                                                                    <input name="merchant" value="1531484441"  class="form-control">
+                                                                                    <input name="merchant" value="1531484441" readonly  class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                            
@@ -312,7 +306,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
-                                                                <div class="main-card mb-3 card">
+                                                                <!-- <div class="main-card mb-3 card">
                                                                     <div class="card-body"><h5 class="card-title">Informasi Saldo</h5>
                                                                         <div class="form-row">
                                                                             <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Sisa Saldo Flazz</h5> </label>
@@ -322,7 +316,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
+                                                                </div> -->
                                                                 <div class="main-card mb-3 card">
                                                                     <div class="card-body"><h5 class="card-title">Informasi Merchant</h5>
                                                                         <form class="">
@@ -346,6 +340,9 @@
 
                                                                 <div class="main-card mb-3 card">
                                                                     <div class="card-body"><h5 class="card-title">Informasi User</h5>
+                                                                        <button class="mb-1 mt-1 btn-pill btn-hover-shine btn btn-success" onclick="window.location.href='adduser-profile.html'">
+                                                                            <i class="nav-link-icon typcn typcn-user-add-outline"></i> Tambah User
+                                                                        </button>
                                                                         <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
                                                                             <thead>
                                                                                 <tr>

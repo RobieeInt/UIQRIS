@@ -70,7 +70,7 @@
                                 <div class="scrollbar-container">
                                     <a class="dropdown-item mb-2" href="dashboard-admin-transaction-qris.html">Transaksi QRIS</a>
                                     <!-- <a class="dropdown-item mb-2" href="dashboard-admin-transaction-fee.html">  Transaksi Topup Flazz</a>
-                                    <a class="dropdown-item " href="dashboard-admin-transaction-history.html">Riwayat Pengisian Saldo Flazz</a> --> 
+                                    <a class="dropdown-item " href="dashboard-admin-transaction-history.html">Riwayat Pengisian Saldo Flazz</a> -->
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                             <div class="">
                                 <div class="scrollbar-container">
                                     <a class="dropdown-item mb-2 " href="dashboard-admin-settlement-qris.html">Rekap Pembayaran QRIS</a>
-                                    <!--  <a class="dropdown-item " href="dashboard-admin-settlement-topup.html">Rekap Pembayaran Topup Flazz</a> --> 
+                                     <!-- <a class="dropdown-item " href="dashboard-admin-settlement-topup.html">Rekap Pembayaran Topup Flazz</a> -->
                                 </div>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                                             <span class="d-inline-block pr-2">
                                             <i class=""></i>
                                         </span>
-                                            <span class="d-inline-block">Edit Merchant </span>
+                                            <span class="d-inline-block">Tambah SPBU </span>
                                         </div>
                                         <div class="page-title-subheading opacity-10">
                                             <nav class="" aria-label="breadcrumb">
@@ -163,10 +163,7 @@
                                                         </a>
                                                     </li>
                                                     <li class="breadcrumb-item">
-                                                        <a href="javascript:void(0);"> Edit Merchant</a>
-                                                    </li>
-                                                    <li class="active breadcrumb-item" aria-current="page">
-                                                        User
+                                                        <a href="javascript:void(0);"> Tambah SPBU</a>
                                                     </li>
                                                 </ol>
                                             </nav>
@@ -180,274 +177,101 @@
                     <!-- Data Tables -->
                     <div class="container kero-container mt-2">
                         <div class="row">
-                                    <div class="col-md-12" style="width:800px; margin:0 auto;">
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body">
-                                                <div>
-                                                 <ul class="nav nav-tabs" role="tablist">
-                                                    
-                                                     <li>
-                                                             <button  href="#form-edit"  data-toggle="tab" class="mb-2 mr-2 btn btn-shadow btn-outline-focus active">
-                                                                  <i class="nav-link-icon typcn typcn-chevron-left-outline"></i>Form Edit</button>
-                                                     </li>
-                                                     <li>
-                                                             <button  href="#table-spbu"  data-toggle="tab" class="mb-2 mr-2 btn btn-shadow btn-outline-focus ">
-                                                                  List SPBU <i class="nav-link-icon typcn typcn-chevron-right-outline"></i></button>
-                                                     </li>
-                                                 </ul>
-                                            <div class="tab-content">
-                                                     <div class="tab-pane active" id="form-edit">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="main-card mb-3 card">
-                                                                    <div class="card-body"><h5 class="card-title">Profil Merchant</h5>
-                                                                        <form class="">
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>ID Merchant</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" placeholder="M1002" readonly class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-row">
-                                                                                        <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Merchant</h5> </label>
-                                                                                        <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" placeholder="PT. Citra Glow UV" readonly class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Kontak Merchant</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" placeholder="Zaenal" readonly class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>No. Telpon</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" value="08568780192" readonly class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Email</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" value="zaenal@admin.com" readonly class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Alamat</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7 mb-2">
-                                                                                    <textarea name="text" id="exampleText" readonly class="form-control">Jl. Gading Serpong</textarea>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Tipe Pembayaran</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <div class="position-relative form-check mt-2">
-                                                                                        <label class="form-check-label mr-5"><input type="checkbox" checked class="form-check-input"> QRIS</label>
-                                                                                        <label class="form-check-label"><input type="checkbox"  class="form-check-input"> Flazz</label>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>MDR</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" value="0.4" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <!-- <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Fee Bank</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" value="500" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Fee SPBU</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" value="1000" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Fee Hexa</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" value="500" class="form-control">
-                                                                                </div>
-                                                                            </div> -->
+                            <div class="col-md-6">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body"><h5 class="card-title">Profil SPBU</h5>
+                                        <form class="">
 
-                                                                            <h5 class="card-title mt-5">Informasi Rekening</h5>
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Nama Bank</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" value="BCA" readonly  class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Nomor Rekening</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" value="1531484441" readonly  class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                           
-                                                                        </form>
-                                                                        <button class="mt-5 ml-2 btn btn-danger">Kembali</button>
-                                                                        <button class="mt-5 ml-3 btn btn-success" data-toggle="modal" data-target="#exampleModal">Simpan</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <!-- <div class="main-card mb-3 card">
-                                                                    <div class="card-body"><h5 class="card-title">Informasi Saldo</h5>
-                                                                        <div class="form-row">
-                                                                            <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Sisa Saldo Flazz</h5> </label>
-                                                                            <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                            <div class="col-md-7">
-                                                                                <input name="merchant" value="Rp. 1.400.000" readonly class="form-control">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div> -->
-                                                                <div class="main-card mb-3 card">
-                                                                    <div class="card-body"><h5 class="card-title">Informasi Merchant</h5>
-                                                                        <form class="">
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Total MDR</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" value="Rp. 5.452.000" readonly class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-row">
-                                                                                <label class="col-md-4 mt-2 "> <h5>Total Fee SPBU</h5> </label>
-                                                                                <label class="col-md-1 mt-2 text-muted">:</label>
-                                                                                <div class="col-md-7">
-                                                                                    <input name="merchant" value="Rp. 3.000" readonly class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                        </form>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="main-card mb-3 card">
-                                                                    <div class="card-body"><h5 class="card-title">Informasi User</h5>
-                                                                        <button class="mb-1 mt-1 btn-pill btn-hover-shine btn btn-success" onclick="window.location.href='adduser-profile.html'">
-                                                                            <i class="nav-link-icon typcn typcn-user-add-outline"></i> Tambah User
-                                                                        </button>
-                                                                        <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>No.</th>
-                                                                                    <th>Kontak Merchant</th>
-                                                                                    <th>No Telpon</th>
-                                                                                    <th>Email</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr onclick="window.location.href='edituser-profile-merchant.html'">
-                                                                                    <td>1</td>
-                                                                                    <td>Robby H</td>
-                                                                                    <td>0838188777</td>
-                                                                                    <td>robby@gmail.com</td>
-                                                                                </tr>
-                                                                                <tr   onclick="window.location.href='edituser-profile-merchant.html'">
-                                                                                    <td>2</td>
-                                                                                    <td>Danuroni</td>
-                                                                                    <td>08568780192</td>
-                                                                                    <td>sales@datasys.co.id</td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                     </div>
-                                                     <div class="tab-pane" id="table-spbu">
-                                                        <button class="mb-1 mt-1 btn-pill btn-hover-shine btn btn-success" onclick="window.location.href='addspbu.html'">
-                                                            <i class="nav-link-icon typcn typcn-user-add-outline"></i> Tambah SPBU
-                                                        </button>
-                                                         <table id="myTable2" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                                                             <thead>
-                                                                 <tr>
-                                                                     <th>No.</th>
-                                                                     <th>SPBU Code</th>
-                                                                     <th>Nama SPBU</th>
-                                                                     <th>Email</th>
-                                                                     <th>Telpon</th>
-                                                                     <th>PIC</th>
-                                                                     <th>Saldo Flazz</th>
-                                                                     <th>Aksi</th>
-                                                                 </tr>
-                                                             </thead>
-                                                             <tbody>
-                                                                 <tr  onclick="window.location.href='editspbu.html'">
-                                                                     <td>1</td>
-                                                                     <td>34-77889</td>
-                                                                     <td>SERENADE</td>
-                                                                     <td>serenade@gmail.com</td>
-                                                                     <td>08568780192</td>
-                                                                     <td>aenal</td>
-                                                                     <td>Rp. 5.468.734</td>
-                                                                     <td>
-                                                                        <div class="col-md-3">
-                                                                            <div class="col-md-3">
-                                                                                <button class="mb-2 mr-2 btn-hover-shine btn btn-danger btn-sm">Nonaktifkan</button>
-                                                                            </div>
-                                                                        </div>
-                                                                     </td>
-                                                                 </tr>
-                                                                 <tr  onclick="window.location.href='editspbu.html'">
-                                                                     <td>2</td>
-                                                                     <td>34-15318</td>
-                                                                     <td>BSD</td>
-                                                                     <td>yanto12@gmail.com</td>
-                                                                     <td>08568780192</td>
-                                                                     <td>Yanto kun</td>
-                                                                     <td>Rp. 2.876.643</td>
-                                                                     <td>
-                                                                        <div class="col-md-3">
-                                                                            <div class="col-md-3">
-                                                                                <button class="mb-2 mr-2 btn-hover-shine btn btn-danger btn-sm">Nonaktifkan</button>
-                                                                            </div>
-                                                                        </div>
-                                                                     </td>
-                                                                 </tr>
-                                                                 <tr  onclick="window.location.href='editspbu.html'">
-                                                                     <td>3</td>
-                                                                     <td>34-13206</td>
-                                                                     <td>PEMUDA</td>
-                                                                     <td>pemudaspbu@gmail.com</td>
-                                                                     <td>08568780192</td>
-                                                                     <td>Topan</td>
-                                                                     <td>Rp. 3.439.623</td>
-                                                                     <td>
-                                                                        <div class="col-md-3">
-                                                                            <div class="col-md-3">
-                                                                                <button class="mb-2 mr-2 btn-hover-shine btn btn-danger btn-sm">Nonaktifkan</button>
-                                                                            </div>
-                                                                        </div>
-                                                                     </td>
-                                                                 </tr>
-                                                             </tbody>
-                                                         </table>
-                                                     </div>
-                                    
+                                            <div class="form-row">
+                                                        <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Merchant</h5> </label>
+                                                        <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                <div class="col-md-7">
+                                                    <input name="merchant" placeholder="PT. Citra Glow UV" readonly class="form-control">
+                                                </div>
                                             </div>
-                                         </div>
-                                     </div>
-                                        </div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Kode Spbu</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                <div class="col-md-7">
+                                                    <input name="merchant" placeholder="34-77657"  class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Nama Spbu</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                <div class="col-md-7">
+                                                    <input name="merchant" placeholder="Serenade"  class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>PIC</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                <div class="col-md-7">
+                                                    <input name="merchant" value="Zaenal"  class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>No. Telpon</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                <div class="col-md-7">
+                                                    <input name="merchant" value="08568780192"  class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Email</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                <div class="col-md-7">
+                                                    <input name="merchant" value="zaenal@admin.com"  class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 mb-2" for="exampleCustomCheckbox"> <h5>Alamat</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted mb-2" for="exampleCustomCheckbox">:</label>
+                                                <div class="col-md-7">
+                                                    <textarea name="text" id="exampleText"  class="form-control mb-2">Jl. Gading Serpong</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Batas Transaksi Flazz</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                <div class="col-md-7">
+                                                    <input name="merchant" value="5.000.000" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Tipe Pembayaran</h5> </label>
+                                                <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                                <div class="col-md-7">
+                                                    <div class="position-relative form-check mt-2">
+                                                        <label class="form-check-label mr-5"><input type="checkbox" c class="form-check-input"> QRIS</label>
+                                                        <label class="form-check-label"><input type="checkbox" checked class="form-check-input"> Flazz</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                            <button class="mt-5 ml-2 btn btn-danger">Kembali</button>
+                                            <button class="mt-5 ml-3 btn btn-success">Simpan</button>
+                                        </form>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-6">
+
+                                <!-- <div class="main-card mb-3 card">
+                                    <div class="card-body"><h5 class="card-title">Informasi Saldo</h5>
+                                        <div class="form-row">
+                                            <label class="col-md-4 mt-2 " for="exampleCustomCheckbox"> <h5>Sisa Saldo Flazz</h5> </label>
+                                            <label class="col-md-1 mt-2 text-muted" for="exampleCustomCheckbox">:</label>
+                                            <div class="col-md-7">
+                                                <input name="merchant" value="Rp. 1.750.000" readonly class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                
+                            </div>
+                        </div>
                     </div>
                     <!-- Akhir Datatables -->
                 </div>
@@ -795,26 +619,4 @@
     <script type="text/javascript" src="./assets/scripts/main.4e74689db090db0fe094.js"></script>
 </body>
 
-</html>
-
-<!-- Modal -->
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Informasi</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p class="mb-0 text-success">Data Telah Berhasil Diubah</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" href="dashboard-merchant-merchant.html">Ke Halaman Merchant & SPBU</button>
-            </div>
-        </div>
-    </div>
-</div>
+</html> 

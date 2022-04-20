@@ -40931,7 +40931,7 @@ div.fixed-table-scroll-outer {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 9999 !important;
     padding: 4px;
     margin: .125rem 0 0;
     font-size: .9rem;

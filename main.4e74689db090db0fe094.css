@@ -40914,7 +40914,7 @@ div.fixed-table-scroll-outer {
     -webkit-touch-callout: none;
     user-select: none;
     width: 276px;
-    z-index: 9999 !important
+    z-index: -1
 }
 
 .datepicker-container::before,
@@ -40955,8 +40955,7 @@ div.fixed-table-scroll-outer {
 
 .datepicker-top-left,
 .datepicker-top-right {
-    border-top-color: rgba(0, 0, 0, 0.15);
-    z-index: 9999 !important;
+    border-top-color: rgba(0, 0, 0, 0.15)
 }
 
 .datepicker-top-left::before,
